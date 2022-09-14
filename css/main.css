@@ -1,0 +1,258 @@
+/*Primeira Sessão*/
+
+.intro {
+  padding: 5rem 8.75rem 0rem 8.75rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 8.75rem;
+  max-height: 500px;
+  align-items: center;
+  justify-self: center;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.intro img {
+  min-height: 300px;
+}
+.titulo {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  line-height: 1.125;
+  margin-bottom: 1.875rem;
+  position: relative;
+}
+.titulo::before {
+  content: "";
+  width: 130px;
+  height: 120px;
+  background-image: url("../img/intro/detalhe.svg");
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -45px;
+  z-index: -1;
+}
+.intro-texto p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+@media (max-width: 1125px) {
+  .intro {
+    grid-template-columns: 1fr;
+    padding: 0;
+    padding-top: 5rem;
+    gap: 3rem;
+  }
+  .intro img {
+    max-width: 200px;
+    justify-self: center;
+  }
+  .titulo {
+    justify-self: center;
+    text-align: center;
+    font-size: 38px;
+    padding: 0 10px;
+  }
+  .titulo::before {
+    display: none;
+  }
+  .intro-texto p {
+    text-align: center;
+  }
+}
+/*Segunda sessão*/
+
+.exp {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 8rem 8.75rem 3rem 8.75rem;
+  gap: 20px;
+  font-family: "Fira Sans", Arial, sans-serif;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.cover {
+  max-width: 100%;
+}
+.sub-titulo img {
+  object-fit: cover;
+}
+.sub-titulo-m {
+  display: none;
+}
+.exp-texto {
+  justify-self: center;
+  align-items: flex-start;
+  font-size: 16px;
+  max-width: 581px;
+}
+.exp-texto p {
+  margin-bottom: 2rem;
+  font-size: 25px;
+}
+.tec-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.tec-lista img {
+  width: 48px;
+}
+.javascript {
+  border: 1px solid #000;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+  gap: 10px;
+}
+.social a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: #373737;
+  font-size: 19px;
+  border-radius: 4px;
+  gap: 10px;
+  transition: 0.3s ease-in-out;
+}
+.social a:hover {
+  background-color: #5e5e5e;
+}
+.social li {
+  display: flex;
+  gap: 40px;
+}
+.social a img {
+  width: 25px;
+  border-radius: 4px;
+}
+.social a:hover {
+  opacity: 1;
+}
+@media (max-width: 1171px) {
+  .exp {
+    grid-template-columns: 1fr;
+    padding: 8rem 1rem 0rem 1rem;
+    justify-items: center;
+  }
+  .cover {
+    display: none;
+  }
+  .sub-titulo-m {
+    display: inline;
+    width: 300px;
+  }
+  .exp-texto {
+    justify-items: center;
+  }
+  .exp-texto p {
+    font-size: 16px;
+    min-height: min-content;
+    text-align: center;
+    padding: 0rem 3rem;
+  }
+  .social {
+    justify-content: center;
+  }
+  .tec-lista {
+    justify-content: center;
+  }
+}
+/*teceira sessão*/
+.projetos {
+  padding: 8rem 8.75rem 1rem 8.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  max-height: 300px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+.card p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.card img {
+  max-width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.card img:hover {
+  box-shadow: 0px 0px 20px #7e7e7e;
+  transform: translateY(-2px);
+}
+.tecnologias {
+  font-weight: bold;
+}
+.card h4 {
+  font-size: 18px;
+  color: #585858;
+}
+@media (max-width: 640px) {
+  .projetos {
+    padding: 8rem 1rem 3rem 1rem;
+  }
+}
+/*Botão ver mais*/
+.btn-ver-mais {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.btn-ver-mais button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #373737;
+  border-color: #373737;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btn-ver-mais button:hover {
+  background-color: #5e5e5e;
+}
+/*Projetos parte 2*/
+.ver-mais {
+  padding: 0rem 8.75rem 2rem 8.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.cards-p2 {
+  display: none;
+}
+.viewMore {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+@media (max-width: 640px) {
+  .ver-mais {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+}

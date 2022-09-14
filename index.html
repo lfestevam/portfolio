@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal, feito com intuito de expor meus projetos.">
+  <meta name="keywords" content="portfólio, HTML, CSS, JavaScript">
+  <meta name="autor" content="Luís Estevam">
+  <!--Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <!--Estilos-->
+  <!--Global-->
+  <link rel="stylesheet" href="./css/global.css">
+  <!--Estrutural-->
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/aside.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <!--Titulo-->
+  <title>Portfólio</title>
+</head>
+
+<body>
+  <header class="header">
+    <img src="./img/header/marca.svg" alt="logo">
+    <nav aria-label="primaria" id="nav">
+      <p>Menu</p>
+      <img src="./img/header/menu.svg" alt="menu" id="btn-mobile">
+      <ul id="menu">
+        <li><a href="#exp" id="experience">Experiência</a></li>
+        <li><a href="#projetos" id="projects">Projetos</a></li>
+        <li><a href="#contato" id="contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <img src="./img/intro/perfil.svg" alt="foto-de-perfil">
+      <div class="intro-texto">
+        <h1 class="titulo">Desenvolvedor<br>Front End</h1>
+        <p>Recife, PE</p>
+      </div>
+    </section>
+    <section class="exp" id="exp">
+      <div class="cover">
+        <img src="./img/experiencia/experiencia-q.svg" alt="sub-titulo" class="sub-titulo">
+      </div>
+      <img src="./img/experiencia/experiencia.svg" alt="sub-titulo-m" class="sub-titulo-m">
+      <div class="exp-texto">
+        <p>Olá, meu nome é Luís, sou um pernambucano formado em fisioterapia, sempre fui ligado a tecnologia, e ao terminar a graduação em fisioterapia decidi me dedicar mais a programação.<br>
+          Atualmente possuo experiencia em algumas tecnologias utilizadas no desenvolvimento web Front-end.
+        </p>
+        <ul class="tec-lista">
+          <li><img src="./img/experiencia/html.svg" alt="html"></li>
+          <li><img src="./img/experiencia/css.svg" alt="html"></li>
+          <li><img src="./img/experiencia/JS.svg" alt="html" class="javascript"></li>
+          <li><img src="./img/experiencia/react.svg" alt="html"></li>
+          <li><img src="./img/experiencia/git.svg" alt="html"></li>
+          <li><img src="./img/experiencia/github.svg" alt="html"></li>
+          <li><img src="./img/experiencia/figma.svg" alt="html"></li>
+        </ul>
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/in/lu%C3%ADs-estevam-devweb1307/" class="linkedin" target="blank">LinkedIn</a></li>
+          <li><a href="https://github.com/lfestevam" class="github" target="blank">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="projetos" id="projetos">
+      <h2 class="titulo titulo-projetos">PROJETOS</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="./img/projetos/projeto-1.png" alt="projeot-um">
+          <h4>Descrição:</h4>
+          <p>Portfólio pessoal.</p>
+          <h4>Tecnjologia utilizadas:</h4>
+          <p class="tecnologias">HTML, CSS e JavaScript puro.</p>
+        </div>
+        <div class="card">
+          <img src="./img/projetos/em breve.png" alt="em-breve">
+          <h4>Descrição:</h4>
+          <p>Em breve</p>
+          <h4>Tecnjologia utilizadas:</h4>
+          <p></p>
+        </div>
+    </section>
+    <section class="ver-mais">
+      <div class="cards-p2" id="verMais">
+        <div class="card">
+          <img src="./img/projetos/em breve.png" alt="em-breve">
+          <h4>Descrição:</h4>
+          <p>Em breve</p>
+          <h4>Tecnjologia utilizadas:</h4>
+          <p></p>
+        </div>
+        <div class="card">
+          <img src="./img/projetos/em breve.png" alt="em-breve">
+          <h4>Descrição:</h4>
+          <p>Em breve</p>
+          <h4>Tecnjologia utilizadas:</h4>
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <div class="btn-ver-mais">
+      <button type="button" id="btn-ver-mais">Ver Mais</button>
+    </div>
+  </main>
+  <aside class="aside" id="contato">
+    <div class="grid-aside">
+      <div class="contato">
+        <p>Estou disponível para novos projetos no momento.<br>Entre em contato comigo e marcamos uma conversa 👋</p>
+      </div>
+      <div class="contatos">
+        <h5 class="email">luisfestevam01@gmail.com</h5>
+        <h5>(81) 99896-4314</h5>
+      </div>
+    </div>
+  </aside>
+  <footer>
+    <p class="dev-by">Desenvolvido com 🤍 by: Luís Estevam</p>
+  </footer>
+</body>
+<script src="./script/script.js"></script>
+
+</html>

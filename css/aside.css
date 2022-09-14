@@ -1,0 +1,50 @@
+.aside {
+  background-color: #141414;
+  padding: 8rem 8.75rem 6rem 8.75rem;
+  margin: 0;
+  display: grid;
+  gap: 100px;
+}
+.grid-aside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contato {
+  width: 429px;
+  height: 96px;
+  color: #ffffff;
+  position: relative;
+}
+.contato p {
+  font-size: 22px;
+}
+.contatos {
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px;
+}
+.email {
+  margin-bottom: 10px;
+}
+@media (max-width: 950px) {
+  .aside {
+    padding: 8rem 1rem 6rem 1rem;
+  }
+  .grid-aside {
+    grid-template-columns: 1fr;
+  }
+  .contato {
+    width: auto;
+  }
+  .contato p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .contato::before {
+    display: none;
+  }
+}
