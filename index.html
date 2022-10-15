@@ -31,7 +31,9 @@
 
 <body>
   <header class="header">
-    <img src="./img/header/marca.svg" alt="logo">
+    <div class="img-logo">
+      <img src="./img/header/marca.svg" alt="logo">
+    </div>
     <nav aria-label="primaria" id="nav">
       <p>Menu</p>
       <img src="./img/header/menu.svg" alt="menu" id="btn-mobile">
@@ -43,18 +45,22 @@
     </nav>
   </header>
   <main>
-    <section class="intro">
-      <img src="./img/intro/perfil.svg" alt="foto-de-perfil">
+    <article class="intro">
+      <div class="foto-perfil">
+        <img src="./img/intro/perfil.svg" alt="foto-de-perfil">
+      </div>
       <div class="intro-texto">
         <h1 class="titulo">Desenvolvedor<br>Front End</h1>
         <p>Recife, PE</p>
       </div>
-    </section>
-    <section class="exp" id="exp">
+    </article>
+    <article class="exp" id="exp">
       <div class="cover">
         <img src="./img/experiencia/experiencia-q.svg" alt="sub-titulo" class="sub-titulo">
       </div>
-      <img src="./img/experiencia/experiencia.svg" alt="sub-titulo-m" class="sub-titulo-m">
+      <div class="sub-titulo-mobile">
+        <img src="./img/experiencia/experiencia.svg" alt="sub-titulo-m" class="sub-titulo-m">
+      </div>
       <div class="exp-texto">
         <p>Olá, meu nome é Luís, sou um pernambucano formado em fisioterapia, sempre fui ligado a tecnologia, e ao terminar a graduação em fisioterapia decidi me dedicar mais a programação.<br>
           Atualmente possuo experiencia em algumas tecnologias utilizadas no desenvolvimento web Front-end.
@@ -73,8 +79,8 @@
           <li><a href="https://github.com/lfestevam" class="github" target="blank">GitHub</a></li>
         </ul>
       </div>
-    </section>
-    <section class="projetos" id="projetos">
+    </article>
+    <article class="projetos" id="projetos">
       <h2 class="titulo titulo-projetos">PROJETOS</h2>
       <div class="cards">
         <div class="card">
@@ -91,22 +97,15 @@
           <h4>Tecnjologia utilizadas:</h4>
           <p>HTML, CSS e JavaScript puro.</p>
         </div>
-    </section>
-    <section class="ver-mais">
+    </article>
+    <article class="ver-mais">
       <div class="cards-p2" id="verMais">
         <div class="card">
-          <img src="./img/projetos/em breve.png" alt="em-breve">
+          <img src="./img/projetos/projeto-3.png" alt="Bikcraft">
           <h4>Descrição:</h4>
-          <p>Em breve</p>
+          <p>Front-end de um e-commerce.</p>
           <h4>Tecnjologia utilizadas:</h4>
-          <p></p>
-        </div>
-        <div class="card">
-          <img src="./img/projetos/em breve.png" alt="em-breve">
-          <h4>Descrição:</h4>
-          <p>Em breve</p>
-          <h4>Tecnjologia utilizadas:</h4>
-          <p></p>
+          <p>HTML, CSS e JavaScript puro</p>
         </div>
         <div class="card">
           <img src="./img/projetos/em breve.png" alt="em-breve">
@@ -116,7 +115,7 @@
           <p></p>
         </div>
       </div>
-    </section>
+    </article>
     <div class="btn-ver-mais">
       <button type="button" id="btn-ver-mais">Ver Mais</button>
     </div>

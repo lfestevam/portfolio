@@ -31,5 +31,11 @@ const verMais = document.getElementById("btn-ver-mais");
 function btnVerMais() {
   const btnVer = document.getElementById("verMais");
   btnVer.classList.toggle("viewMore");
+
+  if (btnVer.classList.contains("viewMore")) {
+    verMais.innerText = "Ver Menos";
+  } else {
+    verMais.innerText = "Ver Mais";
+  }
 }
 verMais.addEventListener("click", btnVerMais);
