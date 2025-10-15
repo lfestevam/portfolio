@@ -1,0 +1,40 @@
+/*Resets*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+/*Conteiner tamanho*/
+.conteiner-base {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/*FONTES*/
+.titulo-font {
+  font-family: "Antic Didone", serif;
+  font-weight: 300;
+}
+.links-font {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+}
