@@ -1,5 +1,12 @@
+/*HEADER*/
+
 header {
-  background-color: #000000;
+  background-color: #ededed;
+  position: fixed;   /* fixa o header na tela */
+  top: 0;            /* cola no topo */
+  left: 0;           /* garante que comece do canto esquerdo */
+  width: 100%;       /* ocupa toda a largura da tela */
+  z-index: 1000;     /* garante que fique acima dos outros elementos */
 }
 
 .conteiner-header {
@@ -11,20 +18,21 @@ header {
   padding: 0px 10px;
 }
 
-.navegation-header {
+.navegaticao-header {
   display: flex;
   gap: 10px;
+
 }
 
 .link-header {
   padding: 0.6rem 0.6rem;
   position: relative;
   justify-content: center;
-  color: #ededed;
+  color: #000000;
 }
 
-.titulo-header {
-  color: #ededed;
+.titulo-menu {
+  color: #000000;
 }
 
 .logo {
@@ -64,4 +72,173 @@ header {
   transition: 0.3s ease-in-out;
 }
 
-/*fazer a responsividade*/
+.primeira-section{
+   height: 60vh;
+  background-image: url(../img/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ededed;
+  position: relative;
+  padding: 10px 10px;
+}
+
+.primeira-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.conteudo-primeira{
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  z-index: 1;
+  text-align: start;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.conteudo-primeira p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+/* SEGUNDA SEÇÃO*/
+.segunda-section{
+  padding: 40px 10px;
+  background-color: #ededed;
+  color:#000000;
+}
+.conteudo-texto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-conteudo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-top: 50px;
+}
+.grid-item{
+  padding: 20px 10px 10px 10px;
+  display: grid;
+  border: 1px solid #c2c2c2;
+  border-left: none;
+  gap: 15px;
+  text-align: center;
+}
+.grid-item img{
+  margin: auto;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.grid-item img:hover {
+  scale: 1.2;
+}
+
+.grid-item:nth-child(3), 
+.grid-item:nth-child(6){
+  border-right: none;
+}
+
+.grid-item:nth-child(4),
+.grid-item:nth-child(5),
+.grid-item:nth-child(6){
+  border-bottom: none;
+}
+.grid-item:nth-child(-n+2) {
+  border-top: none;
+}
+.grid-item:nth-child(n + 2){
+  border-top: none;
+}
+.grid-item img{
+  width: 3rem;
+}
+/*RESPONSIVO*/  
+
+
+
+
+
+
+/*responsividade header*/
+
+@media screen and (max-width: 700px) {
+  .conteiner-header{
+   margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .link-header::after {
+    display: none;
+  }
+}
+
+/*responsividade primeira section*/
+@media (max-width: 1024px) {
+  .primeira-section {
+    height: 60vh;
+  }
+  .conteudo-primeira h1 {
+    font-size: 2.4rem;
+  }
+  .conteudo-primeira p {
+    font-size: 1rem;
+  }
+  .conteudo-primeira {
+    left: 40px;
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .primeira-section {
+    height: 50vh;
+  }
+  .conteudo-primeira {
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .conteudo-primeira h1 {
+    font-size: 2rem;
+  }
+  .conteudo-primeira p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .primeira-section {
+    height: 45vh;
+  }
+  .conteudo-primeira {
+    position: relative;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    padding: 40px 20px;
+  }
+  .conteudo-primeira h1 {
+    font-size: 1.6rem;
+  }
+  .conteudo-primeira p {
+    font-size: 0.9rem;
+  }
+}
+
