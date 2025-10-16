@@ -2,12 +2,13 @@
 
 header {
   background-color: #ededed;
-  position: fixed;   /* fixa o header na tela */
-  top: 0;            /* cola no topo */
-  left: 0;           /* garante que comece do canto esquerdo */
-  width: 100%;       /* ocupa toda a largura da tela */
-  z-index: 1000;     /* garante que fique acima dos outros elementos */
-}
+  position: fixed; 
+  top: 0;         
+  left: 0;         
+  width: 100%;       
+  z-index: 1000;  
+  box-shadow:0px 0px 10px #9b5de5;
+} 
 
 .conteiner-header {
   display: flex;
@@ -150,7 +151,6 @@ h2 {
   border-radius: 50%;
 }
 .grid-item img:hover {
-  scale: 1.2;
   box-shadow: 0px 0px 30px #9b5de5;
 }
 
@@ -173,6 +173,46 @@ h2 {
 .grid-item img{
   width: 3rem;
 }
+
+.terceira-section{
+  padding: 20px 0px 0px 0px;
+}
+.conteudo-terceira{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo-terceira ul li img{
+  width: 300px;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+}
+.conteudo-terceira ul li img:hover{
+  box-shadow: 0px 0px 10px#9b5de5;
+}
+@keyframes animacao {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+.conteudo-terceira ul li img.ativo{
+  animation: animacao 3s ease-in-out infinite;
+}
+.grid-terceira{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.grid-terceira li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+
 /*RESPONSIVO*/  
 
 
