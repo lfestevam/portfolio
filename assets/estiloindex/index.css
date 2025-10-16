@@ -71,9 +71,11 @@ header {
   box-shadow: 0px 0px 5px #9b5de5;
   transition: 0.3s ease-in-out;
 }
-
+main{
+    background-color: #ededed;
+}
 .primeira-section{
-   height: 60vh;
+  height: 50vh;
   background-image: url(../img/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -81,9 +83,9 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #ededed;
   position: relative;
   padding: 10px 10px;
+  color: #ededed;
 }
 
 .primeira-section::before {
