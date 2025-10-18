@@ -20,9 +20,9 @@
                 <h1 class="titulo-menu titulo-font">festevam.com</h1>
                 <nav>
                     <ul class = "navegaticao-header">
-                        <li><a href="#" class="link-header texto-font">Home</a></li>
-                        <li><a href="#" class="link-header texto-font">Portfolio</a></li>
-                        <li><a href="#" class="link-header texto-font">Sobre Mim</a></li>
+                        <li><a href="#primeira" class="link-header texto-font">Home</a></li>
+                        <li><a href="#portfolio" class="link-header texto-font">Portfolio</a></li>
+                        <li><a href="#sobre" class="link-header texto-font">Sobre Mim</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,87 +33,109 @@
         </div>
     </header>
     <main>
-      <section class="primeira-section">
-        <div class="conteudo-primeira">
-          <h2 class="titulo-font">Luis Estevam</h2>
-          <p class="texto-font">Estudante de sistemas de informação, no momento me dedicando ao apredizado da ciência de dados.</p>
+      <section class="primeira-section" id="primeira">
+        <div class="conteiner-primeira conteiner-base">
+          <div class="conteudo-primeira">
+            <h2 class="titulo-font">Luis Estevam</h2>
+            <p class="texto-font">Estudante de sistemas de informação, no momento me dedicando ao apredizado da ciência de dados.</p>
+          </div>
         </div>
       </section>
       <section class="segunda-section">
-        <div class="conteiner-base">
+        <div class="conteiner-base container-terceira">
           <div class="conteudo-texto">
             <h2 class="titulo-font">Áreas de interesse</h2>
-            <p class="texto-font">Essas são as coisas que procuro aprender</p>
+            <p class="texto-font">Essas são as coisas que tenho interesse em aprender</p>
           </div>
           <div>
             <ul class="grid-conteudo">
-              <!-- animar os li com javascript pra ficar subindo e descendo qunado a pessoa chegar na section. -->
               <li class="grid-item">
-                <img src="./assets/img/icons8-desenvolvimento-em-nuvem-50.png" alt="">
+                <img src="./assets/img/cloud-sync.png" alt="">
                 <h3 class="titulo-font">COMPUTAÇÃO EM NUVEM</h3>
-                <p>Computação em nuvem: Serve para armazenar e processar grandes volumes de dados de forma eficiente, garantindo escalabilidade e desempenho em projetos de Ciência de Dados.</p>
+                <p class="texto-font">Computação em nuvem: Serve para armazenar e processar grandes volumes de dados de forma eficiente, garantindo escalabilidade e desempenho em projetos de Ciência de Dados.</p>
               </li>
               <li class="grid-item">
                 <img src="./assets/img/icons8-machine-learning-64.png" alt="">
                 <h3 class="titulo-font">APRENDIZADO DE MÁQUINA</h3>
-                <p>Aprendizado de máquina: Aplicado para criar modelos capazes de identificar padrões, realizar previsões e gerar insights valiosos a partir dos dados.</p>
+                <p class="texto-font">Aprendizado de máquina: Aplicado para criar modelos capazes de identificar padrões, realizar previsões e gerar insights valiosos a partir dos dados.</p>
               </li>
               <li class="grid-item">
                 <img src="./assets/img/icons8-backup-de-dados-64.png" alt="">
                 <h3 class="titulo-font">CIÊNCIA DE DADOS</h3>
-                <p>Ciência de Dados: Trata-se da coleta e limpeza dos dados, até a análise e visualização — transformando dados brutos em informações estratégicas.</p>
+                <p class="texto-font">Ciência de Dados: Trata-se da coleta e limpeza dos dados, até a análise e visualização — transformando dados brutos em informações estratégicas.</p>
               </li>
               <li class="grid-item">
                 <img src="./assets/img/icons8-banco-de-dados-64.png" alt="">
                 <h3 class="titulo-font">BANCO DE DADOS</h3>
-                <p>Bancos de dados relacionais e não relacionais: utilizados para armazenar, organizar e consultar informações, otimizando o acesso e a estrutura dos dados em meus projetos.</p>
+                <p class="texto-font">Bancos de dados relacionais e não relacionais: utilizados para armazenar, organizar e consultar informações, otimizando o acesso e a estrutura dos dados em meus projetos.</p>
               </li>
               <li class="grid-item">
                 <img src="./assets/img/icons8-python-64.png" alt="">
                 <h3 class="titulo-font">PYTHON</h3>
-                <p>
-                  Python: Linguagem principal para análise de dados, modelagem estatística e automação, explorando bibliotecas como Pandas, NumPy e Scikit-learn.</p>
+                <p class="texto-font">Python: Linguagem principal para análise de dados, modelagem estatística e automação, explorando bibliotecas como Pandas, NumPy e Scikit-learn.</p>
               </li>
               <li class="grid-item">
                 <img src="./assets/img/icons8-painel-de-controle-64.png" alt="">
                 <h3 class="titulo-font">POWER BI</h3>
-                <p>Power BI: Ferramenta utilizada para criar dashboards interativos e relatórios visuais que facilitam a interpretação dos resultados e apoiam a tomada de decisões baseada em dados.</p>
+                <p class="texto-font">Power BI: Ferramenta utilizada para criar dashboards interativos e relatórios visuais que facilitam a interpretação dos resultados e apoiam a tomada de decisões baseada em dados.</p>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="terceira-section">
+      <section class="terceira-section" id="sobre">
         <div class="conteiner-base conteudo-terceira">
+          <h2 class="titulo-font">Sobre mim</h2>
+          <div class="apresentacao">
+            <img src="./assets/img/eu.png" alt="">
+            <p class="texto-font">Oi!</br><br> Eu sou o Luís Felipe, tenho 26 anos e sou estudante de Sistemas de Informação, atualmente no segundo período.
+              Sou apaixonado por tecnologia e tenho um grande interesse pela Ciência de Dados — gosto de entender como os dados podem contar histórias, revelar padrões e ajudar a tomar decisões mais inteligentes.
+              <br><br>Estou sempre buscando aprender novas ferramentas e linguagens que fazem parte dessa área, e meu objetivo é me tornar um cientista de dados excelente, capaz de transformar informação em insight e insight em resultado.</p>
+        </div>
+      </section>
+      <section class="quarta-section" id="portfolio">
+        <div class="conteiner-base conteudo-quarta">
           <h2 class="titulo-font">Meus Projetos</h2>
-          <ul  class="grid-terceira">
+          <ul  class="cards-quarta">
             <li>
-              <img src="./assets/img/projeto.png" alt="" id="animate-js">
-              <h3 class="titulo-font">Projeto de portifolio</h3>
+              <div id="animate-js">
+                <img src="./assets/img/bikeCraft.png" alt="">
+              </div>
+              <h3 class="titulo-font">BIKCRAFT</h3>
               <p>descrição</p>
             </li>
             <li>
-              <img src="./assets/img/projeto.png" alt="" id="animate-js">
+              <div id="animate-js">
+                <img src="./assets/img/animaisSite.png" alt="">
+              </div>
+              <h3 class="titulo-font">ANIMAIS FANTASTICOS</h3>
+              <p>descrição</p>
+            </li>
+            <li>
+              <div id="animate-js">
+                <img src="./assets/img/projeto.png" alt="">
+              </div>
+              <h3 class="titulo-font">PROJETO DE PORTFOLIO</h3>
+              <p>descrição</p>
+            </li>
+            <li>
+              <div id="animate-js">
+                <img src="./assets/img/projeto.png" alt="">
+              </div>
+              <h3 class="titulo-font">PROJETO DE PORTFOLIO</h3>
+              <p>descrição</p>
+            </li>
+            <li>
+              <div id="animate-js">
+                <img src="./assets/img/projeto.png" alt="">
+              </div>
               <h3 class="titulo-font">PROJETO TITULO</h3>
               <p>descrição</p>
             </li>
             <li>
-              <img src="./assets/img/projeto.png" alt="" id="animate-js">
-              <h3 class="titulo-font">PROJETO TITULO</h3>
-              <p>descrição</p>
-            </li>
-            <li>
-              <img src="./assets/img/projeto.png" alt="" id="animate-js">
-              <h3 class="titulo-font">PROJETO TITULO</h3>
-              <p>descrição</p>
-            </li>
-            <li>
-              <img src="./assets/img/projeto.png" alt="" id="animate-js">
-              <h3 class="titulo-font">PROJETO TITULO</h3>
-              <p>descrição</p>
-            </li>
-            <li>
-              <img src="./assets/img/projeto.png" alt="" id="animate-js">
+              <div id="animate-js">
+                <img src="./assets/img/projeto.png" alt="">
+              </div>
               <h3 class="titulo-font">PROJETO TITULO</h3>
               <p>descrição</p>
             </li>

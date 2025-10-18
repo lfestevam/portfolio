@@ -27,7 +27,7 @@ a {
 
 /*Conteiner tamanho*/
 .conteiner-base {
-  max-width: 75rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
